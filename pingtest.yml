@@ -1,0 +1,6 @@
+---
+- name: Ping Test w var register
+  hosts: localhost
+  tasks:
+    - ping:
+
