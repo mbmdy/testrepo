@@ -1,6 +1,11 @@
 ---
 - name: Ping Test w var register
   hosts: localhost
+  gather_facts: no
+
   tasks:
     - ping:
+      register: ping_results
 
+    - debug:
+        var: ping_results
